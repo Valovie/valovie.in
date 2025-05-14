@@ -58,7 +58,7 @@ export default function ChampionFeatures() {
         "Get step-by-step solutions in a gamified story mode, earn 50 XP per doubt solved—even at 2 a.m. Because doubts don’t wait, and neither should you.",
     },
     {
-      icon: "/images/features/squadsstudy.PNG",
+      icon: "/images/features/squadsstudy.png",
       title: "Group Study or Study Partner",
       subtitle: "Quest Together, Win Big!",
       description:
