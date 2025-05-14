@@ -1,5 +1,27 @@
 export default function ChampionFeatures() {
   const features = [
+   
+    {
+      icon: "/images/features/game.png",
+      title: "Gamified Test Series",
+      subtitle: "Prep like a Player, Win like a Pro",
+      description:
+        "Step into a world where every test is a mission. Experience full-length and subject-wise tests designed like high-stakes boss battles. Progress. Level up. Repeat.",
+    },
+    {
+      icon: "/images/features/vaulticon.png",
+      title: "Vaults",
+      subtitle: "Crack Open the Secrets of India’s Top Institutes",
+      description:
+        "Unlock premium test series and content from legendary coaching institutes.",
+    },
+    {
+      icon: "/images/features/leaderboard.png",
+      title: "Leaderboard",
+      subtitle: "Be Seen. Be Ranked. Be Remembered.",
+      description:
+        "Compete in real-time with aspirants across the country. Rise through the ranks. Earn badges. Become a name others fear to face.",
+    },
     {
       icon: "/images/features/dashboard.png",
       title: "Personalized Dashboard",
@@ -22,26 +44,27 @@ export default function ChampionFeatures() {
         "From digital certificates to IRL merch, every win counts. Get rewarded for consistency, speed, accuracy, and your warrior spirit.",
     },
     {
-      icon: "/images/features/game.png",
-      title: "Gamified Test Series",
-      subtitle: "Prep like a Player, Win like a Pro",
+      icon: "/images/features/forumicon.png",
+      title: "Student Nexus Doubt Forum",
+      subtitle: "Unite & Solve!",
       description:
-        "Step into a world where every test is a mission. Experience full-length and subject-wise tests designed like high-stakes boss battles. Progress. Level up. Repeat.",
+        "Post your doubts in a buzzing community hub and get help from peers, top performers, or institute mentors—because no question is too small when you're in the Nexus.",
     },
     {
-      icon: "/images/features/leaderboard.png",
-      title: "Vaults",
-      subtitle: "Crack Open the Secrets of India’s Top Institutes",
+      icon: "/images/features/doubtslayerboticon.png",
+      title: "Doubt Slayer Bot",
+      subtitle: "Slay Doubts Instantly!",
       description:
-        "Unlock premium test series and content from legendary coaching institutes.",
+        "Get step-by-step solutions in a gamified story mode, earn 50 XP per doubt solved—even at 2 a.m. Because doubts don’t wait, and neither should you.",
     },
     {
-      icon: "/images/features/leaderboard.png",
-      title: "Leaderboard",
-      subtitle: "Be Seen. Be Ranked. Be Remembered.",
+      icon: "/images/features/squadsstudy.PNG",
+      title: "Group Study or Study Partner",
+      subtitle: "Quest Together, Win Big!",
       description:
-        "Compete in real-time with aspirants across the country. Rise through the ranks. Earn badges. Become a name others fear to face.",
-    },
+        "Join a Study Squad, tackle missions together, compete in mock tests, and climb leaderboards—turning group study into an epic co-op learning quest.",
+    }
+    
   ];
 
   return (

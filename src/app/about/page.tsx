@@ -14,7 +14,7 @@ const AboutPage = () => {
   return (
     <>
       <Breadcrumb
-        pageName="About Page"
+        pageName=""
         description="India’s first meditative, gamified learning ecosystem — where learning becomes a quest, and every test is a battle to level up."
       />
       <AboutSectionOne />

@@ -7,10 +7,10 @@ const NewsLatterBox = () => {
 
   return (
     <div className="shadow-three bg-[#202020] relative z-10 rounded-xs  p-8 sm:p-11 lg:p-8 xl:p-11">
-      <h3 className="mb-4 text-2xl leading-tight font-bold text-black dark:text-white">
+      <h3 className="mb-4 text-2xl leading-tight font-bold text-ywllow-300 dark:text-yellow-300">
       Join Us in <br/>Our journey
       </h3>
-      <p className="border-body-color/25 font-serif text-body-color mb-11 border-b pb-11 text-base leading-relaxed dark:border-white/25">
+      <p className="border-body-color/25 font-serif text-white mb-11 border-b pb-11 text-base leading-relaxed dark:border-white/25">
       Stay updated on new vault drops, exam warzones, reward systems, and leaderboard resets
       </p>
       <div>
@@ -18,20 +18,20 @@ const NewsLatterBox = () => {
           type="text"
           name="name"
           placeholder="Enter your name"
-          className="border-stroke font-serif text-body-color focus:border-primary dark:text-body-color-dark dark:shadow-two dark:focus:border-primary mb-4 w-full rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base outline-hidden dark:border-transparent dark:bg-[#2C303B] dark:focus:shadow-none"
+          className="border-stroke w-full mb-5 font-serif rounded-xs border px-6 py-3 text-base text-gray-800 placeholder-yellow-500 outline-hidden focus:border-yellow-500 dark:border-transparent dark:bg-yellow-200 dark:text-gray-300 dark:placeholder-yellow-600 dark:shadow-two dark:focus:border-yellow-400 dark:focus:shadow-none"
         />
         <input
           type="email"
           name="email"
           placeholder="Enter your email"
-          className="border-stroke font-serif text-body-color focus:border-primary dark:text-body-color-dark dark:shadow-two dark:focus:border-primary mb-4 w-full rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base outline-hidden dark:border-transparent dark:bg-[#2C303B] dark:focus:shadow-none"
+          className="border-stroke w-full mb-5 font-serif rounded-xs border px-6 py-3 text-base text-gray-800 placeholder-yellow-500 outline-hidden focus:border-yellow-500 dark:border-transparent dark:bg-yellow-200 dark:text-gray-300 dark:placeholder-yellow-600 dark:shadow-two dark:focus:border-yellow-400 dark:focus:shadow-none"
         />
         <input
           type="submit"
           value="Join"
-          className="bg-primary shadow-submit hover:bg-primary/90 dark:shadow-submit-dark mb-5 flex w-full cursor-pointer items-center justify-center rounded-xs px-9 py-4 text-base font-medium text-white duration-300"
+          className="bg-yellow-400 shadow-submit hover:bg-yellow-900 dark:shadow-submit-dark mb-5 flex w-full cursor-pointer items-center justify-center rounded-xs px-9 py-4 text-base font-medium text-base duration-300"
         />
-        <p className="text-body-color font-serif dark:text-body-color-dark text-center text-base leading-relaxed">
+        <p className="text-white font-serif dark:text-white text-center text-base leading-relaxed">
           No spam guaranteed, So please don’t send any spam mail.
         </p>
       </div>
