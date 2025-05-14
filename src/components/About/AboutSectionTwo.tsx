@@ -1,78 +1,80 @@
 import Image from "next/image";
 
-const AboutSectionTwo = () => {
-  return (
-    <section className="py-16 md:py-20 lg:py-28 bg-[#242222]">
-      <div className="container">
-        <div className="-mx-4 flex flex-wrap items-center">
-          <div className="w-full px-4 lg:w-1/2">
-            <div
-              className="relative mx-auto mb-12 aspect-25/24 max-w-[500px] text-center lg:m-0"
-              data-wow-delay=".15s"
-            >
-              <Image
-                src="/images/about/about-image-2.svg"
-                alt="about image"
-                fill
-                className="drop-shadow-three dark:hidden dark:drop-shadow-none"
-              />
-              <Image
-                src="/images/about/about-image-2-dark.svg"
-                alt="about image"
-                fill
-                className="hidden drop-shadow-three dark:block dark:drop-shadow-none"
-              />
-            </div>
-          </div>
-          <div className="w-full px-4 lg:w-1/2">
-            <div className="max-w-[470px] font-sans" >
-              <div className="flex flex-rox">
-                <div className="mb-9 mr-4">
-                  <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                    For B2B
-                  </h3>
-                  <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                    Branded Vault Creation <br />
-                    Gamification Infrastructure<br />
-                    Nationwide Scalability<br />
-                    Flexible Monetization<br />
-                    Real-Time Analytics
-                  </p>
-                </div>
-                <div className="mb-9">
-                  <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                    For B2C
-                  </h3>
-                  <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                    One Stop Place for Exam Preparation<br />
-                    Access to a Vault Marketplace<br />
-                    Gamified Learning Experience<br />
-                    Motivation and Engagement<br />
-                    Personalized Learning<br />
-                    Flexible Subscription Model
-
-                  </p>
-                </div>
-              </div>
-              <div className="mb-1">
-                <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Broader Ecosystem Solution
-                </h3>
-                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Bridging the Digital Divide <br/>
-                  Reducing Educational Inefficiencies<br/>
-                  India-First Approach<br/>
-                  Marketplace Ecosystem<br/>
-                  Hybrid Learning Support
-
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
+const ecosystemData = {
+  heading: "GAMIFIED ECOSYSTEM OF EDUCATION",
+  description:
+    "Valovie obliterates the EdTech crisis of 60% unmotivated students and 80% digitally stranded institutes, igniting a gamified revolution to conquer academic quests and unleash global legends.",
+  sections: [
+    {
+      title: "For B2B",
+      points: [
+        "Branded Vault Creation",
+        "Gamification Infrastructure",
+        "Nationwide Scalability",
+        "Flexible Monetization",
+        "Real-Time Analytics",
+      ],
+    },
+    {
+      title: "For B2C",
+      points: [
+        "One Stop Place for Exam Preparation",
+        "Access to a Vault Marketplace",
+        "Gamified Learning Experience",
+        "Motivation and Engagement",
+        "Personalized Learning",
+        "Flexible Subscription Model",
+      ],
+    },
+    {
+      title: "Broader Ecosystem Solution",
+      points: [
+        "Bridging the Digital Divide",
+        "Reducing Educational Inefficiencies",
+        "India-First Approach",
+        "Marketplace Ecosystem",
+        "Hybrid Learning Support",
+      ],
+    },
+  ],
 };
 
-export default AboutSectionTwo;
+export default function EcosystemSection() {
+  return (
+    <></>
+    // <section
+    //   className="text-white bg-cover bg-center py-16 px-4"
+    //   style={{
+    //     backgroundImage: `url('/images/valovie-ecosystem-bg.png')`,
+    //   }}
+    // >
+    //   <div className="max-w-7xl mx-auto text-center">
+    //     <h2 className="text-3xl md:text-5xl font-bold text-yellow-400 font-cinzel">
+    //       {ecosystemData.heading}
+    //     </h2>
+    //     <p className="mt-4 max-w-3xl mx-auto text-white/80 text-lg md:text-xl font-light leading-relaxed">
+    //       {ecosystemData.description}
+    //     </p>
+
+    //     <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+    //       {ecosystemData.sections.map((section, idx) => (
+    //         <div
+    //           key={idx}
+
+    //           className="rounded-full p-6 text-left "
+    //         >
+    //           <h3 className="text-xl md:text-2xl font-semibold text-yellow-400 text-center mb-4">
+    //             {section.title}
+    //           </h3>
+    //           <ul className="list-decimal list-inside text-white/90 space-y-2 text-sm md:text-base font-light">
+    //             {section.points.map((point, i) => (
+    //               <li key={i}>{point}</li>
+    //             ))}
+    //           </ul>
+    //         </div>
+    //       ))}
+    //     </div>
+    //   </div>
+    // </section>
+  );
+}
