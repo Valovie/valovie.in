@@ -5,39 +5,39 @@ const pricingPlans = [
     title: "Rookie Mode",
     price: "₹Free tier",
     features: [
-      "3 PYQ Access",
-      "Personalized Dashboard",
-      "Leaderboard",
-      "❌ No Monthly Missions",
-      "❌ No Rewards",
-      "❌ No Vault Access",
+      { text: "3 PYQ Access", type: "tick" },
+      { text: "Personalized Dashboard", type: "tick" },
+      { text: "Leaderboard", type: "tick" },
+      { text: "No Monthly Missions", type: "cross" },
+      { text: "No Rewards", type: "cross" },
+      { text: "No Vault Access", type: "cross" },
     ],
-    bgImage: "/images/rate_bg.png", // uploaded image
+    bgImage: "/images/rate_bg.png",
   },
   {
     title: "Pro League",
     price: "₹699/month",
     features: [
-      "Unlimited PYQ Access",
-      "Personalized Dashboard",
-      "Leaderboard",
-      "Monthly Missions",
-      "Rewards (XP, badges)",
-      "⚠️ Limited Vault Access (1 vault unlock/month)",
+      { text: "Unlimited PYQ Access", type: "tick" },
+      { text: "Personalized Dashboard", type: "tick" },
+      { text: "Leaderboard", type: "tick" },
+      { text: "Monthly Missions", type: "tick" },
+      { text: "Rewards (XP, badges)", type: "tick" },
+      { text: "Limited Vault Access (1 vault unlock/month)", type: "cross" },
     ],
-    bgImage: "/images/rate_bg.png", // uploaded image
+    bgImage: "/images/rate_bg.png",
   },
   {
-    title: "Legendary Vault Access",
+    title: "Legendary<br/>Vault Access", // With <br/>
     price: "₹999/month",
     features: [
-      "All Features in Pro League",
-      "Exclusive Monthly Missions",
-      "Unlimited Vault Unlocks",
-      "Special Leaderboard Placement",
-      "Priority Support & Early Access to New Features",
+      { text: "All Features in Pro League", type: "tick" },
+      { text: "Exclusive Monthly Missions", type: "tick" },
+      { text: "Unlimited Vault Unlocks", type: "tick" },
+      { text: "Special Leaderboard Placement", type: "tick" },
+      { text: "Priority Support & Early Access to New Features", type: "tick" },
     ],
-    bgImage: "/images/rate_bg.png", // uploaded image
+    bgImage: "/images/rate_bg.png",
   },
 ];
 
@@ -55,18 +55,33 @@ export default function PricingSection() {
         {pricingPlans.map((plan, idx) => (
           <div
             key={idx}
-            className="relativebg-no-repeat  bg-contain bg-center px-6 py-10 text-left min-h-[500px]"
+            className="relative bg-no-repeat bg-contain bg-center px-6 py-10 text-left min-h-[500px]"
             style={{
               backgroundImage: `url('${plan.bgImage}')`,
             }}
           >
-            <h3 className="text-3xl mt-4 ml-2  font-bold text-yellow-400 mb-2">
-              {plan.title}
-            </h3>
-            <p className="text-3xl mt-12 ml-2 font-semibold mb-6 ">{plan.price}</p>
-            <ul className="space-y-2 text-lg ml-2 font-serif">
+            <h3
+              className="text-3xl mt-4 ml-2 font-bold text-yellow-400 mb-2"
+              dangerouslySetInnerHTML={{ __html: plan.title }}
+            />
+            <p className="text-3xl mt-12 ml-2 font-semibold mb-6">
+              {plan.price}
+            </p>
+            <ul className="space-y-3 text-lg ml-2 font-serif">
               {plan.features.map((feature, i) => (
-                <li key={i}>✓ {feature}</li>
+                <li key={i} className="flex items-center gap-2">
+                  <Image
+                    src={
+                      feature.type === "tick"
+                        ? "/images/icons/tick.png"
+                        : "/images/icons/cross.png"
+                    }
+                    alt={feature.type === "tick" ? "tick" : "cross"}
+                    width={20}
+                    height={20}
+                  />
+                  {feature.text}
+                </li>
               ))}
             </ul>
           </div>
